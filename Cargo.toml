@@ -18,7 +18,7 @@ edition = "2018"
 resolver = "2"
 
 [dependencies]
-bitvec = "0.22"
+bitvec = "1.0.1"
 blake2s_simd = "0.5"
 ff = "0.12.0"
 group = "0.12.0"
@@ -39,8 +39,8 @@ sha2 = "0.9"
 blstrs = { version = "0.6.0", features = ["__private_bench"] }
 pairing = "0.22"
 yastl = "0.1.2"
-ec-gpu = { version = "0.2.0" }
-ec-gpu-gen = { version = "0.4.0" }
+ec-gpu = { git = "https://github.com/filecoin-project/ec-gpu", branch = "master" }
+ec-gpu-gen = { git = "https://github.com/filecoin-project/ec-gpu", branch = "master" }
 
 fs2 = { version = "0.4.3", optional = true }
 
@@ -93,5 +93,5 @@ members = [
 
 [build-dependencies]
 blstrs = { version = "0.6.0", features = ["__private_bench"] }
-ec-gpu-gen = { version = "0.4.0" }
+ec-gpu-gen = { git = "https://github.com/filecoin-project/ec-gpu", branch = "master" }
 rustversion = "1.0.6"
